@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Serif Display', serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(135deg,rgb(8, 8, 89), rgb(61, 61, 113)); */
+    background: url("./Images/Img.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.calculator {
+    padding: 110px 70px;
+    background: rgba(0, 0, 0, 0.705);
+    width: 100%;
+    height: 100vh;
+}
+
+.calculator h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.calculator h1 span {
+    color: aqua;
+}
+
+.input-box {
+    background: rgba(158, 158, 194, 0.322);
+    width: 430px;
+    height: 120px;
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    align-items: center;
+}
+
+.input-box input {
+    width: 250px;
+   height: 50px;
+   margin-left: 20px;
+   font-size: 2rem;
+   border-radius: 8px;
+   border: none;
+  padding: 8px 15px;
+}
+
+.input-box h3 {
+    font-size: 1.4rem;
+    margin-left: 20px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.input-box button {
+ padding: 12px 24px;
+ background: aqua;
+ border: none;
+ border-radius: 9px;
+ font-size: 1rem;
+ font-weight: 900;
+ margin-top: 35px;
+}
+
+button:hover {
+    background-color:  rgb(65, 202, 202);
+}
+
+#result {
+    font-size: 1.4rem;
+    color: white;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+
+@media (max-width:475px) {
+    .input-box {
+        width: 330px;
+        height: 220px;
+        display: block;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .input-box h3 {
+        margin-bottom: 10px;
+    }
+
+    .input-box input {
+        width: 270px;
+    }
+    .input-box button {
+        margin-left: 20px;
+        margin-top: 10px;
+        padding: 12px 98px;
+    }
+    .container {
+        width: 100%;
+        height: 120vh;
+     }
+     .calculator {
+        padding: 110px 70px;
+        background: rgba(0, 0, 0, 0.705);
+        width: 100%;
+        height: 120vh;
+    }
+}
